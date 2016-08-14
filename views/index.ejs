@@ -3,9 +3,25 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  	<div class='container'>
+  		<div class='row'>
+  			<h1 class='center-align'>Take Notes</h1>
+  		</div>
+  		<div class='row'>
+  			<form class='col sm12 m6' id='add_note'>
+  				<input name='notations' placeholder='Add a Note' />
+  			</form>
+  			<div class='col sm12 m6'>
+  				<h2 class='center-align'>Notes</h2>
+  				<div id='notes_list'></div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- scritps -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script type="text/javascript" src="./javascripts/notes.js"></script>
   </body>
 </html>
